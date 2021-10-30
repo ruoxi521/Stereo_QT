@@ -29,7 +29,7 @@ Linux下运行效果
 
 ![](https://raw.githubusercontent.com/ruoxi521/Stereo_QT/main/image/Videos.png)
 
-# 使用方法
+# 使用介绍
 - 相机这里输入相机索引
 - 模式这里输入模式索引
 1. 左单目模式：LEFT_EYE_MODE
@@ -38,3 +38,15 @@ Linux下运行效果
 4. 双目模式：BINOCULAR_MODE
 - 拍照
 - 录像
+
+# 运行方法
+
+添加执行权限
+```
+sudo chmod 777 webcam_Stereo.sh
+```
+
+运行启动脚本
+```
+./webcam_Stereo.sh
+```
