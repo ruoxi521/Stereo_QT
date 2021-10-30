@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>525</height>
+    <width>609</width>
+    <height>536</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>571</width>
-      <height>391</height>
+      <width>581</width>
+      <height>371</height>
      </rect>
     </property>
     <property name="text">
@@ -30,41 +30,41 @@
    <widget class="QPushButton" name="modeswitch">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>440</y>
-      <width>89</width>
-      <height>25</height>
+      <x>520</x>
+      <y>430</y>
+      <width>31</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>相机模式切换</string>
+     <string>切换</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>410</y>
-      <width>461</width>
-      <height>61</height>
+      <y>390</y>
+      <width>411</width>
+      <height>81</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="lineEdit1">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>410</y>
+      <x>470</x>
+      <y>400</y>
       <width>41</width>
       <height>25</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="label1">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>410</y>
+      <x>430</x>
+      <y>400</y>
       <width>41</width>
       <height>17</height>
      </rect>
@@ -73,14 +73,89 @@
      <string>相机：</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>430</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>模式：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>430</y>
+      <width>41</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Photograph">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>390</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>拍照</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="record">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>390</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>录像</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pause">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>430</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>暂停</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_state">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>470</y>
+      <width>411</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>600</width>
-     <height>28</height>
+     <width>609</width>
+     <height>22</height>
     </rect>
    </property>
    <property name="defaultUp">
@@ -91,10 +166,12 @@
    </property>
    <widget class="QMenu" name="menu">
     <property name="title">
-     <string>摄像头</string>
+     <string>File</string>
     </property>
     <addaction name="Open"/>
     <addaction name="Stop"/>
+    <addaction name="About"/>
+    <addaction name="Exit"/>
    </widget>
    <addaction name="menu"/>
   </widget>
@@ -107,6 +184,16 @@
   <action name="Stop">
    <property name="text">
     <string>Stop</string>
+   </property>
+  </action>
+  <action name="Exit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="About">
+   <property name="text">
+    <string>About</string>
    </property>
   </action>
  </widget>
